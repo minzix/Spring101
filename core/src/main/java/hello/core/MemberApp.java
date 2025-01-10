@@ -9,6 +9,7 @@ public class MemberApp {
     public static void main(String[] args) {
         // MemberService 만들기
         MemberService memberService = new MemberServiceImpl();
+
         // Member 객체 생성
         Member member = new Member(1L, "Minji", Grade.VIP);
         memberService.join(member); // 생성된 객체를 회원가입시킴
