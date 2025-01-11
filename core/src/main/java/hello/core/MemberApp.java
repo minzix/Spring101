@@ -7,8 +7,12 @@ import hello.core.member.MemberServiceImpl;
 
 public class MemberApp {
     public static void main(String[] args) {
+        // AppConfig 객체 생성
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
+
         // MemberService 만들기
-        MemberService memberService = new MemberServiceImpl();
+        // MemberService memberService = new MemberServiceImpl();
 
         // Member 객체 생성
         Member member = new Member(1L, "Minji", Grade.VIP);
